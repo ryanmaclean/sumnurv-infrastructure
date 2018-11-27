@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! ansible --version | grep 1.9.4
+if ! ansible --version | grep 2.7.2
 then
     if apt-get update -q
     then
@@ -10,8 +10,8 @@ then
     then 
         echo "Dependencies installed"
     fi
-    if pip install -U pip ansible==1.9.4
+    if pip install -U pip ansible==2.7.2
     then 
-        echo "Ansible 1.9.4 installed"
+        echo "Ansible 2.7.2 installed"
     fi
 fi
